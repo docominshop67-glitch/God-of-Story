@@ -1,0 +1,264 @@
+2026-09-27T02:22:18Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-09-27T02:22:18Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-09-27T02:22:24Z INF +--------------------------------------------------------------------------------------------+
+2026-09-27T02:22:24Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-09-27T02:22:24Z INF |  https://realtor-civic-karl-blowing.trycloudflare.com                                      |
+2026-09-27T02:22:24Z INF +--------------------------------------------------------------------------------------------+
+2026-09-27T02:22:24Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]
+2026-09-27T02:22:24Z INF Version 2026.9.3 (Checksum f096265ec2fcbe9bb6e2d64268db167ced3fcbb83d894bdb9e2fcdb26f2ea7e2)
+2026-09-27T02:22:24Z INF GOOS: windows, GOVersion: go1.26.8, GoArch: amd64
+2026-09-27T02:22:24Z INF Settings: map[edge-ip-version:4 ha-connections:1 protocol:quic url:http://127.0.0.1:5000]
+2026-09-27T02:22:24Z INF cloudflared will not automatically update on Windows systems.
+2026-09-27T02:22:24Z INF Generated Connector ID: e9fa86fe-b968-434f-9060-e0430f1e02b2
+2026-09-27T02:22:24Z INF Initial protocol quic
+2026-09-27T02:22:24Z INF ICMP proxy will use 192.168.43.97 as source for IPv4
+2026-09-27T02:22:25Z INF ICMP proxy will use fe80::68:9f15:bb70:e087 in zone Wi-Fi as source for IPv6
+2026-09-27T02:22:27Z INF cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool
+2026-09-27T02:22:27Z INF ICMP proxy will use 192.168.43.97 as source for IPv4
+2026-09-27T02:22:28Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026-09-27T02:22:31Z INF Registered tunnel connection connIndex=0 connection=ef2f9a76-df62-4feb-9486-0e505ba499d0 event=0 ip=198.41.200.33 location=sin07 protocol=quic
+2026-09-27T02:22:32Z INF ICMP proxy will use fe80::68:9f15:bb70:e087 in zone Wi-Fi as source for IPv6
+2026-09-27T02:22:32Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-09-27T02:22:37Z INF +----------------------------------------------------------------------------------------------------+
+2026-09-27T02:22:37Z INF |                                      CONNECTIVITY PRE-CHECKS                                       |
+2026-09-27T02:22:37Z INF +----------------------------------------------------------------------------------------------------+
+2026-09-27T02:22:37Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                                      |
+2026-09-27T02:22:37Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully                    |
+2026-09-27T02:22:37Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully                    |
+2026-09-27T02:22:37Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful                   |
+2026-09-27T02:22:37Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful                   |
+2026-09-27T02:22:37Z INF |  TCP Connectivity  region1.v2.argotunnel.com  FAIL    HTTP/2 connection is blocked or unreachable  |
+2026-09-27T02:22:37Z INF |  TCP Connectivity  region2.v2.argotunnel.com  FAIL    HTTP/2 connection is blocked or unreachable  |
+2026-09-27T02:22:37Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable                             |
+2026-09-27T02:22:37Z INF |  WARNING: Allow outbound TCP on port 7844.                                                         |
+2026-09-27T02:22:37Z INF |  WARNING: Allow outbound TCP on port 7844.                                                         |
+2026-09-27T02:22:37Z INF |                                                                                                    |
+2026-09-27T02:22:37Z INF |  SUMMARY: Environment ready with degraded transport. cloudflared will proceed using 'quic'.        |
+2026-09-27T02:22:37Z INF +----------------------------------------------------------------------------------------------------+
+2026-09-27T02:22:37Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=5e0d4500-c0b1-4136-9550-b10c2281c61f status=pass target=region1.v2.argotunnel.com
+2026-09-27T02:22:37Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=5e0d4500-c0b1-4136-9550-b10c2281c61f status=pass target=region2.v2.argotunnel.com
+2026-09-27T02:22:37Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=5e0d4500-c0b1-4136-9550-b10c2281c61f status=pass target=region1.v2.argotunnel.com
+2026-09-27T02:22:37Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=5e0d4500-c0b1-4136-9550-b10c2281c61f status=pass target=region2.v2.argotunnel.com
+2026-09-27T02:22:37Z INF precheck component="TCP Connectivity" details="HTTP/2 connection is blocked or unreachable" run_id=5e0d4500-c0b1-4136-9550-b10c2281c61f status=fail target=region1.v2.argotunnel.com
+2026-09-27T02:22:37Z INF precheck component="TCP Connectivity" details="HTTP/2 connection is blocked or unreachable" run_id=5e0d4500-c0b1-4136-9550-b10c2281c61f status=fail target=region2.v2.argotunnel.com
+2026-09-27T02:22:37Z INF precheck component="Cloudflare API" details="API is reachable" run_id=5e0d4500-c0b1-4136-9550-b10c2281c61f status=pass target=api.cloudflare.com:443
+2026-09-27T02:22:37Z INF precheck complete hard_fail=false run_id=5e0d4500-c0b1-4136-9550-b10c2281c61f suggested_protocol=quic
+2026-09-27T02:36:30Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.33
+2026-09-27T02:36:30Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.33
+2026-09-27T02:36:30Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-27T02:36:35Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.113
+2026-09-27T02:36:35Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.113
+2026-09-27T02:36:35Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T02:36:40Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T02:36:40Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T02:36:42Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026-09-27T02:36:47Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.113
+2026-09-27T02:36:47Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.200.113
+2026-09-27T02:37:02Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2026-09-27T02:37:02Z INF Registered tunnel connection connIndex=0 connection=83834d8f-148f-4a9a-9112-6ea6f44361de event=0 ip=198.41.200.13 location=sin12 protocol=quic
+2026-09-27T02:46:14Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.13
+2026-09-27T02:46:14Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.13
+2026-09-27T02:46:16Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.107
+2026-09-27T02:46:18Z INF Registered tunnel connection connIndex=0 connection=da8bea55-7c6f-4766-ab8d-7f9714577620 event=0 ip=198.41.192.107 location=bkk05 protocol=quic
+2026-09-27T02:46:25Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.107
+2026-09-27T02:46:25Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.107
+2026-09-27T02:46:27Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.233
+2026-09-27T02:55:04Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: handshake did not complete in time" connIndex=0 event=0 ip=198.41.200.233
+2026-09-27T02:55:04Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.233
+2026-09-27T02:55:06Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T02:55:10Z INF Registered tunnel connection connIndex=0 connection=0b24a7b9-6fbd-4ec2-8b6c-14aecb719dac event=0 ip=198.41.200.193 location=sin14 protocol=quic
+2026-09-27T02:55:12Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-09-27T03:18:05Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T03:18:05Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T03:18:06Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026-09-27T03:18:11Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.53
+2026-09-27T03:18:11Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.53
+2026-09-27T03:18:13Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2026-09-27T03:18:15Z INF Registered tunnel connection connIndex=0 connection=49928054-ca83-421a-b394-3309b626a370 event=0 ip=198.41.192.27 location=bkk05 protocol=quic
+2026-09-27T03:20:19Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-09-27T03:46:10Z ERR Serve tunnel error error="datagram manager error: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.27
+2026-09-27T03:46:10Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.27
+2026-09-27T03:46:11Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026-09-27T03:46:16Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.37
+2026-09-27T03:46:16Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.37
+2026-09-27T03:46:16Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2026-09-27T03:46:21Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.27
+2026-09-27T03:46:21Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.192.27
+2026-09-27T03:46:25Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.167
+2026-09-27T03:46:30Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.167
+2026-09-27T03:46:30Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.192.167
+2026-09-27T03:46:33Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.227
+2026-09-27T03:46:38Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.227
+2026-09-27T03:46:38Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.192.227
+2026-09-27T03:46:39Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T03:46:41Z INF Registered tunnel connection connIndex=0 connection=664b7e44-afc4-49ad-94bc-af233c258f71 event=0 ip=198.41.200.23 location=sin07 protocol=quic
+2026-09-27T05:03:08Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:03:08Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:03:08Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T05:03:11Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-09-27T05:03:13Z INF Registered tunnel connection connIndex=0 connection=87717324-4107-4f2d-b7d7-1e0d255e40f9 event=0 ip=198.41.200.193 location=sin14 protocol=quic
+2026-09-27T05:28:35Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-09-27T05:33:59Z ERR Serve tunnel error error="datagram manager error: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T05:34:04Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T05:34:11Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.167
+2026-09-27T05:34:45Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: handshake did not complete in time" connIndex=0 event=0 ip=198.41.192.167
+2026-09-27T05:34:45Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.167
+2026-09-27T05:34:48Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026-09-27T05:35:15Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.37
+2026-09-27T05:35:15Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.192.37
+2026-09-27T05:35:17Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-09-27T05:35:28Z ERR Register tunnel error from server side error="context deadline exceeded" connIndex=0 event=0 ip=198.41.192.47
+2026-09-27T05:35:28Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.192.47
+2026-09-27T05:35:36Z ERR Connection terminated error="control stream error: context deadline exceeded" connIndex=0
+2026-09-27T05:35:44Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.47
+2026-09-27T05:35:46Z INF Registered tunnel connection connIndex=0 connection=b82597d0-1dfa-4fe2-bd97-ca97837fb140 event=0 ip=198.41.192.47 location=bkk05 protocol=quic
+2026-09-27T05:48:58Z ERR Serve tunnel error error="datagram manager error: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.47
+2026-09-27T05:48:58Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.47
+2026-09-27T05:48:58Z ERR Connection terminated error="datagram manager error: timeout: no recent network activity" connIndex=0
+2026-09-27T05:49:04Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2026-09-27T05:49:09Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.13
+2026-09-27T05:49:09Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.13
+2026-09-27T05:49:10Z ERR Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0
+2026-09-27T05:49:47Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:49:53Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:49:53Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:49:53Z ERR Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0
+2026-09-27T05:49:55Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.233
+2026-09-27T05:50:00Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.233
+2026-09-27T05:50:00Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.200.233
+2026-09-27T05:50:02Z ERR Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0
+2026-09-27T05:50:07Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:50:12Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:50:12Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:50:39Z ERR Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0
+2026-09-27T05:51:03Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T05:51:08Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T05:51:08Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T05:51:29Z ERR Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0
+2026-09-27T05:51:46Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:51:51Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:51:51Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.23
+2026-09-27T05:51:55Z ERR Connection terminated error="failed to dial to edge with quic: timeout: no recent network activity" connIndex=0
+2026-09-27T05:53:53Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.77
+2026-09-27T05:53:56Z INF Registered tunnel connection connIndex=0 connection=42a5b992-ae26-42ea-a8c6-1af545c70e8d event=0 ip=198.41.192.77 location=bkk05 protocol=quic
+2026-09-27T06:44:20Z ERR Serve tunnel error error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0 event=0 ip=198.41.192.77
+2026-09-27T06:44:20Z INF Retrying connection in up to 2s connIndex=0 event=0 ip=198.41.192.77
+2026-09-27T06:44:23Z ERR Connection terminated error="accept stream listener error: failed to accept QUIC stream: timeout: no recent network activity" connIndex=0
+2026-09-27T06:44:23Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-09-27T06:44:26Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com: dnsquery: This operation returned because the timeout period expired."
+2026-09-27T06:44:32Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:44:37Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:44:37Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:44:38Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T06:45:12Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:45:14Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:45:14Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:45:19Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T06:46:25Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:46:25Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:46:25Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:46:29Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T06:48:34Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:48:36Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:48:36Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:48:39Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T06:51:07Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:51:09Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:51:09Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:51:30Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T06:54:52Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:54:54Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:54:54Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:55:26Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T06:56:36Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:56:37Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:56:37Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T06:56:59Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:00:18Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:00:21Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:00:21Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:00:39Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:01:32Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:01:33Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:01:33Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:01:34Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:01:37Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:01:37Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:01:37Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:02:04Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:30:57Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:31:01Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:31:01Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:31:04Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:36:05Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:36:05Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:36:05Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:36:10Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:41:08Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:41:08Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:41:08Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:41:31Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:44:42Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:44:43Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:44:43Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:45:07Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:46:11Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:46:12Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:46:12Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:46:24Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:48:55Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:48:56Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:48:56Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:49:18Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:53:40Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:53:41Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:53:41Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:54:00Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T07:59:00Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:59:00Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:59:00Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T07:59:25Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:04:42Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:04:43Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:04:43Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:05:10Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:05:38Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:05:38Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:05:38Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:06:01Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:08:30Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:08:31Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:08:31Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:08:51Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:11:44Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:11:45Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:11:45Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:12:15Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:13:34Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:13:35Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:13:35Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:14:02Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:19:17Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:19:18Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:19:18Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:19:33Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:23:01Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:23:02Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:23:02Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:23:06Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:24:37Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:24:37Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:24:37Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:24:59Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:28:26Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:28:27Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:28:27Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:28:50Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:31:34Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:31:41Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:31:41Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:31:51Z ERR Connection terminated error="control stream error: Unauthorized: Tunnel not found" connIndex=0
+2026-09-27T08:32:06Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:33:48Z ERR Failed to dial a quic connection error="failed to dial to edge with quic: timeout: handshake did not complete in time" connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:33:48Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.200.193
+2026-09-27T08:33:57Z ERR Connection terminated error="failed to dial to edge with quic: timeout: handshake did not complete in time" connIndex=0

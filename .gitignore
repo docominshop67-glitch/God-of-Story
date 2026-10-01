@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+.DS_Store
+
+# Executables & Binaries
+*.exe
+bore.exe
+cloudflared.exe
+
+# Dependencies
+node_modules/
+
+# Archives & Temporary files
+*.zip
+docomin_project.zip
+history_temp.db
+
+# Logs & Tunnel outputs
+*.log
+tunnel_log.txt
+tunnel_url.txt
+ONLINE_URL.txt
+lhr_output.txt
+lt_output.txt
